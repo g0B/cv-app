@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the boxes */
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #e0e0e0; /* Box borders */
+  border-radius: 8px; /* Rounded corners for the box */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a lifted effect */
+}
+
+.section h3 {
+  margin-bottom: 10px;
+}
+
+.section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right-panel {
+  flex: 3;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-left: 20px; /* Space between left and right panel */
+  border: 2px solid #e0e0e0; /* Box border */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a lifted effect */
+}
+
+.right-panel h2 {
+  margin-bottom: 20px;
+}
+
+.right-panel p {
+  line-height: 1.6;
+}
+
+.section textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  min-height: 100px; /* Set a minimum height for textarea */
+}
+
